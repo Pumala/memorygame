@@ -37,124 +37,108 @@ body, button {
     font-family: 'Lato', sans-serif;
 }
 .container {
-    width: 92%;
-    margin: 0 4%;
+    width: 94%;
+    padding: 3%;
+}
+header {
+    margin-top: 10px;
+}
+img {
+    width: 90%;
+    padding: 13% 5%;
+    display: none;
+}
+#images, header {
+    display: flex;
+    flex-wrap: wrap;
+}
+#images {
+    margin-top: 50px;
 }
 
-header {
-    /*text-align: center;*/
-    padding: .75em;
-}
-h2 {
-    display: inline;
+header div {
+    width: 50%;
+    float: left;
+    font-size: 1.25em;
     color: red;
 }
-h2, #reset {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-#reset {
-    padding: .05em .3em;
-    margin: 15px;
+#images div {
+    width: 16%;
+    height: 70px;
+    background-color: #fff;
+    float: left;
+    margin: 0 1%;
+    margin-bottom: 2%;
+    padding: 0 1%;
+    cursor: pointer;
     border-radius: 5px;
+}
+
+#reset {
+    background-color: yellow;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: .8em;
     border: none;
     outline: none;
-    color: #000;
-    background-color: yellow;
-    border: .15em solid yellow;
+    transition: .2s;
+    position: absolute;
+    margin-top: -5px;
 }
 
 #reset:hover {
     background-color: #000;
     color: #fff;
-    border: .15em solid #fff;
-}
-
-#reset, #images div {
     cursor: pointer;
-}
-
-#images div {
-    float: left;
-    width: 16.59%;
-    border: 2px solid #000;
-    height: 75px;
-    margin: 1%;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-#images {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1.25em;
+    transition: .2s;
+    border: 2px solid #fff;
 }
 
 #message {
-    float: left;
-    width: 92%;
-    margin-top: -10px;
     position: absolute;
-    font-size: 1em;
-    color: #fff;
-}
-img {
-    width: 90%;
-    display: block;
-    padding: 30% 5% 0 5%;
-    margin: 0 auto;
-    display: none;
+    margin-top: 13px;
+    width: 94%;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 400px) {
     #images div {
-        width: 16.84%;
-        height: 100px;
+        height: 90px;
+    }
+    header div {
+        font-size: 1.5em;
+    }
+    #reset {
+        padding: 7px 13px;
+    }
+}
+
+@media screen and (min-width: 510px) {
+    #images div {
+        height: 110px;
     }
     #message {
         font-size: 1.25em;
+        margin-top: 30px;
     }
-    img {
-        padding: 20px 5% 0 5%;
-    }
-    h2, #reset {
-        font-size: 1.75em;
+    #images {
+        margin-top: 70px;
     }
 }
 
-@media screen and (min-width: 500px) {
-    #images div {
-        height: 125px;
-        width: 17.1%;
-    }
-    #message {
-        font-size: 1.5em;
-    }
-    h2, #reset {
-        font-size: 2.25em;
-    }
-}
-@media screen and (min-width: 650px) {
-    img {
-        width: 92.016px;
-    }
-}
-
-@media screen and (min-width: 750px) {
-    #images div {
-        width: 17.4%;
-        width: 120.047px;
-    }
-    #message {
-        font-size: 1.75em;
-        margin-top: -15px;
-        width: 690px;
-    }
+@media screen and (min-width: 615px) {
     .container {
-        width: 690px;
+        width: 583.06px;
         margin: 0 auto;
     }
-    h2, #reset {
-        font-size: 2.5em;
+    header div {
+        font-size: 1.75em;
+    }
+    #reset {
+        padding: 9px 16px;
+        margin-top: -5px;
+    }
+    #message {
+        width: 578.094px;
     }
 }
