@@ -45,6 +45,7 @@ function resetGame() {
      $("#images").children().remove();
      makeCards();
      $("#images div").on("click", play);
+     $("#message").html("");
 }
 
 function play() {
